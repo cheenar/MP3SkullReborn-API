@@ -1,0 +1,12 @@
+MP3SkullReborn-API.iml
+.idea/.name
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/copyright/profiles_settings.xml
+out/production/MP3SkullReborn-API/com/cheenar/mkr/Skull.class
+out/production/MP3SkullReborn-API/com/cheenar/mkr/SkullWebsiteParser.class
+out/production/MP3SkullReborn-API/com/cheenar/mkr/tests/SkullTest.class
