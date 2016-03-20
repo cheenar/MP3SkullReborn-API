@@ -72,10 +72,7 @@ public class SkullWebsiteParser
         {
             e.printStackTrace();
         }
-        finally
-        {
-            return null;
-        }
+        return null;
     }
 
 }

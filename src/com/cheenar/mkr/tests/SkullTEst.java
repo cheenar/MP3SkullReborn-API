@@ -1,6 +1,9 @@
 package com.cheenar.mkr.tests;
 
 import com.cheenar.mkr.Skull;
+import com.cheenar.mkr.SkullBinaryDownloader;
+
+import java.util.ArrayList;
 
 /**
  * @author Cheenar
@@ -15,7 +18,18 @@ public class SkullTest
     {
         Skull skull = Skull.getSkull();
         skull.setSessionID(args[0]);
-        skull.getParser().query("taylor swift");
+
+        SkullBinaryDownloader downloader = new SkullBinaryDownloader();
+        try
+        {
+            ArrayList<String> links = skull.getParser().query("taylor swift");
+
+            downloader.downloadFile(links.get(2), "TaylorSwift_22.mp3");
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }

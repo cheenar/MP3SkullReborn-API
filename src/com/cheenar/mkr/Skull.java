@@ -12,11 +12,13 @@ public class Skull
     private static Skull _skull = new Skull();
     private String sessionID;
     private SkullWebsiteParser parser;
+    private SkullBinaryDownloader downloader;
 
     public Skull()
     {
         this.sessionID = "-1";
         this.parser = new SkullWebsiteParser();
+        this.downloader = new SkullBinaryDownloader();
     }
 
     /** Getters **/
@@ -44,6 +46,11 @@ public class Skull
     public SkullWebsiteParser getParser()
     {
         return this.parser;
+    }
+
+    public SkullBinaryDownloader getDownloader()
+    {
+        return this.downloader;
     }
 
     /** Setters **/
